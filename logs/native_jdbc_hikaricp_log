@@ -1,0 +1,3 @@
+[DEBUG] [2020-02-03 15:54:27 오후] HikariProxyConnection@2141817446 wrapping com.mysql.jdbc.JDBC4Connection@15ff3e9e
+[DEBUG] [2020-02-03 15:57:38 오후] HikariProxyConnection@2141817446 wrapping com.mysql.jdbc.JDBC4Connection@15ff3e9e
+[DEBUG] [2020-02-03 15:59:00 오후] HikariProxyConnection@2141817446 wrapping com.mysql.jdbc.JDBC4Connection@15ff3e9e

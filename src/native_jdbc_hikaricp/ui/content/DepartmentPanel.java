@@ -1,4 +1,4 @@
-package native_jdbc.ui.content;
+package native_jdbc_hikaricp.ui.content;
 
 import java.awt.GridLayout;
 

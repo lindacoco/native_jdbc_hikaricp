@@ -8,7 +8,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import native_jdbc_hikaricp.ds.Hikari_DataSource2;
+import native_jdbc_hikaricp.ds.MySqlDataSource;
 import native_jdbc_hikaricp.dto.Department;
 
 public class DepartmentMain {

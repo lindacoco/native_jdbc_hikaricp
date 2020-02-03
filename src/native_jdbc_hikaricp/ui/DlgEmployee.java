@@ -1,4 +1,4 @@
-package native_jdbc.ui;
+package native_jdbc_hikaricp.ui;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -7,8 +7,9 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import native_jdbc.ui.list.EmployeeTblPanel;
+
 import native_jdbc_hikaricp.dto.Employee;
+import native_jdbc_hikaricp.ui.list.EmployeeTblPanel;
 
 import java.awt.event.ActionListener;
 import java.util.List;
