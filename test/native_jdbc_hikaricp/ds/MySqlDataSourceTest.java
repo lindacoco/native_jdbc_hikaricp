@@ -17,7 +17,7 @@ public class MySqlDataSourceTest {
 	@Test
 	public void testGetConnection() {
 		try(Connection con = MySqlDataSource.getConnection()) {
-			logger.debug(con);
+			logger.debug(con);  //새 파일에 넣어지는부분
 			Assert.assertNotNull(con);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

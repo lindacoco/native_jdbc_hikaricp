@@ -1,4 +1,4 @@
-package native_jdbc_hikaricp.dao;
+package native_jdbc_hikaricp.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import native_jdbc_hikaricp.dao.EmployeeDao;
 import native_jdbc_hikaricp.dto.Department;
 import native_jdbc_hikaricp.dto.Employee;
 

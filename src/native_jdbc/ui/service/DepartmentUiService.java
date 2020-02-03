@@ -1,4 +1,4 @@
-package native_jdbc_hikaricp.ui.service;
+package native_jdbc.ui.service;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -7,9 +7,9 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 import native_jdbc_hikaricp.dao.DepartmentDao;
-import native_jdbc_hikaricp.dao.DepartmentDaoImpl;
 import native_jdbc_hikaricp.dao.EmployeeDao;
-import native_jdbc_hikaricp.dao.EmployeeDaoImpl;
+import native_jdbc_hikaricp.daoImpl.DepartmentDaoImpl;
+import native_jdbc_hikaricp.daoImpl.EmployeeDaoImpl;
 import native_jdbc_hikaricp.ds.MySqlDataSource;
 import native_jdbc_hikaricp.dto.Department;
 import native_jdbc_hikaricp.dto.Employee;

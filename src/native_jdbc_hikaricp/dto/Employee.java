@@ -8,6 +8,7 @@ public class Employee {
 	private Employee manager; // 매니저도 따지고 보면 임플로이
 	private int salary;
 	private Department dept; // 헷갈리니까
+	private byte[] pic;
 
 	public Employee(int empNo) {
 		this.empNo = empNo;
@@ -17,6 +18,7 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
+	
 	public Employee(int empNo, String empName, String title, Employee manager, int salary, Department dept) {
 		this.empNo = empNo;
 		this.empName = empName;
@@ -24,6 +26,29 @@ public class Employee {
 		this.manager = manager;
 		this.salary = salary;
 		this.dept = dept;
+	}
+	
+	
+
+	public Employee(int empNo, String empName, String title, Employee manager, int salary, Department dept,
+			byte[] pic) {
+		this.empNo = empNo;
+		this.empName = empName;
+		this.title = title;
+		this.manager = manager;
+		this.salary = salary;
+		this.dept = dept;
+		this.pic = pic;
+	}
+	
+	
+
+	public byte[] getPic() {
+		return pic;
+	}
+
+	public void setPic(byte[] pic) {
+		this.pic = pic;
 	}
 
 	public int getEmpNo() {
@@ -76,8 +101,9 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return String.format("[%s, %s, %s, %s, %s, %s]", empNo,
-				empName, title, manager==null?"null":manager.getEmpNo(), salary, dept.getDeptNo());
+		return String.format("[%s, %s, %s, %s, %s, %s %s]", empNo,
+				empName, title, manager==null?"null":manager.getEmpNo(), salary, dept.getDeptNo()
+						,pic==null?"null":pic.length);
 	}
  
 }

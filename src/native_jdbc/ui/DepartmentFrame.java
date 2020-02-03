@@ -1,4 +1,4 @@
-package native_jdbc_hikaricp.ui;
+package native_jdbc.ui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -17,11 +17,11 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.border.EmptyBorder;
 
+import native_jdbc.ui.content.DepartmentPanel;
+import native_jdbc.ui.list.DepartmentTblPanel;
+import native_jdbc.ui.service.DepartmentUiService;
 import native_jdbc_hikaricp.dto.Department;
 import native_jdbc_hikaricp.dto.Employee;
-import native_jdbc_hikaricp.ui.content.DepartmentPanel;
-import native_jdbc_hikaricp.ui.list.DepartmentTblPanel;
-import native_jdbc_hikaricp.ui.service.DepartmentUiService;
 
 @SuppressWarnings("serial")
 public class DepartmentFrame extends JFrame implements ActionListener {

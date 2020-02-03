@@ -1,4 +1,4 @@
-package native_jdbc_hikaricp.ui.list;
+package native_jdbc.ui.list;
 
 import java.awt.BorderLayout;
 import java.util.ArrayList;

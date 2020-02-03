@@ -11,17 +11,17 @@ import java.util.List;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
+import native_jdbc.ui.DlgEmployee;
 import native_jdbc_hikaricp.dao.DepartmentDao;
-import native_jdbc_hikaricp.dao.DepartmentDaoImpl;
 import native_jdbc_hikaricp.dao.EmployeeDao;
-import native_jdbc_hikaricp.dao.EmployeeDaoImpl;
+import native_jdbc_hikaricp.daoImpl.DepartmentDaoImpl;
+import native_jdbc_hikaricp.daoImpl.EmployeeDaoImpl;
 import native_jdbc_hikaricp.ds.C3P0DataSource;
 import native_jdbc_hikaricp.ds.DBCPDataSource;
 import native_jdbc_hikaricp.ds.Hikari_DataSource;
 import native_jdbc_hikaricp.ds.MySqlDataSource;
 import native_jdbc_hikaricp.dto.Department;
 import native_jdbc_hikaricp.dto.Employee;
-import native_jdbc_hikaricp.ui.DlgEmployee;
 
 public class Main {
 
