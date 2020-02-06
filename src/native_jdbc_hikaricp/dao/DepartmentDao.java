@@ -17,6 +17,8 @@ public interface DepartmentDao {
 	//0203 select  * from department d where deptno =3;
 	Department selectDepartmentByNo(Connection con, int dno) throws SQLException;
 	
+	
+	
 }
 
 

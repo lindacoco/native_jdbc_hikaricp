@@ -81,3 +81,9 @@ ALTER TABLE native_jdbc_study.employee
 drop user if exists 'user_native_jdbc_study'@'localhost';
 grant all privileges on native_jdbc_study.* to 'user_native_jdbc_study'@'localhost' identified by 'rootroot';
 flush privileges;
+
+
+
+select  user(), database ();
+use native_jdbc_study;
+DROP PROCEDURE IF EXISTS procedure01;

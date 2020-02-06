@@ -51,6 +51,8 @@ public class DepartmentFrame extends JFrame implements ActionListener {
 
 	public DepartmentFrame() {
 		service = new DepartmentUiService();
+		dialog = new DlgEmployee();
+		
 		initialize();
 	}
 

@@ -12,9 +12,10 @@ import org.apache.logging.log4j.Logger;
 
 import native_jdbc_hikaricp.dao.DepartmentDao;
 import native_jdbc_hikaricp.dto.Department;
+import native_jdbc_hikaricp.dto.LogUtil;
 
 public class DepartmentDaoImpl implements DepartmentDao {
-	protected static Logger logger = LogManager.getLogger();
+	
 	// MVC모델 2 하는중
 	// 싱글톤 패턴으로 구현할거임..................;
 
@@ -35,7 +36,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 		// con에서 연결됐다고 봄 그럼 쿼리날릴 준비를 해야한다
 		List<Department> list = new ArrayList<>();
 		try (PreparedStatement pstmt = con.prepareStatement(sql); ResultSet rs = pstmt.executeQuery()) {
-			logger.trace(pstmt);
+			LogUtil.prnLog(pstmt);
 			
 			
 			while (rs.next()) {
@@ -64,7 +65,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 			pstmt.setString(2, department.getDeptName());
 			pstmt.setInt(3, department.getFloor());
 			System.out.println(pstmt);
-			logger.trace(pstmt);
+			LogUtil.prnLog(pstmt);
 			res = pstmt.executeUpdate();
 		}
 		return res;
@@ -83,7 +84,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
 			// ?마크는 무조건 넘버링되는 것
 			System.out.println(pstmt);
-			logger.trace(pstmt);
+			LogUtil.prnLog(pstmt);
 			res = pstmt.executeUpdate();
 		}
 		return res;
@@ -101,7 +102,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
 			// ?마크는 무조건 넘버링되는 것
 			//System.out.println(pstmt);
-			logger.trace(pstmt);
+			LogUtil.prnLog(pstmt);
 			res = pstmt.executeUpdate();
 		}
 		return res;
@@ -114,7 +115,7 @@ public class DepartmentDaoImpl implements DepartmentDao {
 		  try( PreparedStatement pstmt = con.prepareStatement(sql);)
 		  {
 			  pstmt.setInt(1, dno);
-			  logger.trace(pstmt); //검증용 
+			  LogUtil.prnLog(pstmt); //검증용 
 			   try(ResultSet rs = pstmt.executeQuery()){
 				   if(rs.next()) {
 					   return getDepartment(rs);
